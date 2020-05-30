@@ -1,0 +1,28 @@
+.slider-main {
+    height: 550px;
+    width: 1020px;
+    position: relative;
+
+    &__pagination {
+        display: flex;
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        z-index: 3;
+    }
+    &__point {
+        border: 1px solid var(--grey3);
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        margin: 0 4px;
+        cursor: pointer;
+
+        &:hover,
+        &_active {
+            border-color: var(--green);
+        }
+    }
+}

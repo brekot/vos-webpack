@@ -1,0 +1,48 @@
+.index-block {
+    padding: 0 0 80px;
+    position: relative;
+
+    &:after {
+        background: url(img/yzor.svg);
+        content: "";
+        width: 1015px;
+        height: 138px;
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        pointer-events: none;
+        z-index: 2;
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        width: 482px;
+        height: 228px;
+    }
+    &__desc {
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 54px;
+        letter-spacing: 2px;
+        padding: 0 0 20px;
+        position: relative;
+        margin: 150px 0 0;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 380px;
+            height: 3px;
+            background-color: var(--green);
+        }
+    }
+    &__right {
+        width: calc(100% - 800px);
+        position: relative;
+    }
+}

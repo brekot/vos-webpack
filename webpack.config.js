@@ -106,7 +106,7 @@ const config = {
             },
             {
                 from: "./src/fonts",
-                to: "./fonts"
+                to: "./local/fonts"
             },
             {
                 from: "./src/uploads",

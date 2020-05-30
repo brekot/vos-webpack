@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Yu Gothic UI';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local('YuGothicLight'), url('./fonts/YuGothicUILight.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Yu Gothic UI';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('YuGothicRegular'), url('./fonts/YuGothicUIRegular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Yu Gothic UI';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local('YuGothicMedium'), url('./fonts/YuGothicUISemibold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Yu Gothic UI';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('YuGothicBold'), url('./fonts/YuGothicUIBold.woff2') format('woff2');
+}

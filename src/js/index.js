@@ -1,25 +1,20 @@
-//import $ from "jquery";
-//import Swiper from 'swiper';
+import $ from "jquery";
+import Swiper from './swiper.js';
 
-//import { Swiper, Navigation, Pagination } from 'swiper/dist/js/swiper.esm.js';
-//Swiper.use([Navigation, Pagination]);
+window.jQuery = $;
+window.$ = $;
 
-//window.jQuery = $;
-//window.$ = $;
-//require('@fancyapps/fancybox');
+$(function() {
 
-//$(function() {
-
-    /* - - - Подключение fancybox - - - */
-/*     $('[data-fancybox]').fancybox({
-        buttons: [
-            "zoom",
-            //"share",
-            "slideShow",
-            "fullScreen",
-            //"download",
-            //"thumbs",
-            "close"
-        ],
-    }); */
-//});
+    new Swiper('.slider-main__slider', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+            clickable: true,
+            el: '.slider-main__pagination',
+            bulletClass: 'slider-main__point',
+            bulletActiveClass: 'slider-main__point_active',
+        },
+    });
+});

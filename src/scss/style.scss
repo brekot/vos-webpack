@@ -1,8 +1,18 @@
-// Root - Var
-@import "./variables";
+/* Основное */
+@import "./main/fonts"; // Шрифты
+@import "./main/variables"; // Переменные
+@import "./main/reboot"; // Сброс стилей
+@import "./main/grid"; // Сетка
 
-// Reboot
-//@import "./reboot";
+// Общие элементы
+@import "./elem/swiper"; // Общие стили сайдера
 
-// Grid
-@import "./grid";
+/* Шаблон */
+@import "./template/main"; // Рабочая область
+@import "./template/footer"; // Подвал
+
+/* Страницы */
+@import "./page/index/block"; // Основной блок
+@import "./page/index/slider"; // Слайдер
+@import "./page/index/menu"; // Меню
+@import "./page/index/desc"; // Описание

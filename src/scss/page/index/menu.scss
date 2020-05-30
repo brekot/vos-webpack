@@ -1,0 +1,26 @@
+.menu-index {
+    background-color: var(--green);
+    margin: 0 0 30px;
+
+    &__block {
+        display: flex;
+        height: 40px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__link {
+        color: var(--white);
+        font-weight: normal;
+        font-size: 20px;
+        text-transform: uppercase;
+
+        &:hover {
+            color: var(--white);
+        }
+    }
+    &__sep {
+        height: 24px;
+        width: 2px;
+        background-color: var(--white);
+    }
+}
