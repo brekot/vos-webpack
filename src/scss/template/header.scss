@@ -1,0 +1,46 @@
+.main-header {
+    background-color: var(--grey3);
+
+    &__block {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__home {
+
+        &-icon {
+            width: 48px;
+            height: 37px;
+            fill: var(--grey2);
+            transition: all .3s;
+
+            &:hover {
+                fill: var(--green);
+            }
+        }
+        &-logo {
+            display: none;
+        }
+    }
+}
+
+@include media-breakpoint-down(lg)
+{
+    .main-header {
+        padding: 5px 0;
+
+        &__block {
+            align-items: center;
+        }
+        &__home {
+
+            &-icon {
+                display: none;
+            }
+            &-logo {
+                display: block;
+                height: 50px;
+            }
+        }
+    }
+}

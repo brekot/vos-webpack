@@ -1,6 +1,6 @@
 .main-footer {
     position: relative;
-    background: linear-gradient(270deg, rgba(203, 203, 203, 0.0001) 21.21%, #9B9B9B 49.48%);
+    background-image: linear-gradient(270deg, rgba(203, 203, 203, 0.0001) 21.21%, #9B9B9B 49.48%);
 
     &__krest {
         position: absolute;
@@ -40,7 +40,6 @@
         color: var(--white);
         font-size: 14px;
         line-height: 20px;
-        font-weight: 300;
     }
     &__part {
         display: flex;
@@ -116,6 +115,66 @@
             width: 19px;
             fill: var(--white);
             margin: 0 10px 0 0;
+        }
+    }
+}
+
+@include media-breakpoint-only(lg)
+{
+    .main-footer {
+
+        &:before {
+            width: 100%;
+        }
+        &__krest {
+            display: none;
+        }
+        &__left {
+            width: 150px;
+        }
+        &__center {
+            width: 310px;
+        }
+    }
+}
+@include media-breakpoint-only(md)
+{
+    .main-footer {
+
+        &:before {
+            width: 100%;
+        }
+        &__krest {
+            display: none;
+        }
+        &__left {
+            width: 120px;
+        }
+        &__center {
+            width: 280px;
+        }
+    }
+}
+@include media-breakpoint-between(xs, sm)
+{
+    .main-footer {
+        background: var(--grey3);
+
+        &:before {
+            width: 100%;
+        }
+        &__krest {
+            display: none;
+        }
+        &__block {
+            height: auto;
+            flex-direction: column;
+            padding: 20px 0 0;
+        }
+        &__part {
+            padding: 0 0 20px;
+            border: none;
+            width: 100%;
         }
     }
 }

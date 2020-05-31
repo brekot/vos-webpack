@@ -1,18 +1,27 @@
 /* Основное */
 @import "./main/fonts"; // Шрифты
 @import "./main/variables"; // Переменные
-@import "./main/reboot"; // Сброс стилей
 @import "./main/grid"; // Сетка
+@import "./main/reboot"; // Сброс стилей
 
 // Общие элементы
 @import "./elem/swiper"; // Общие стили сайдера
+@import "./elem/logo.page"; // Страница с логотипом
+@import "./elem/jquery.jscrollpane"; // Прокрутка
+@import "./elem/menu.inner"; // Внутреннее меню
 
 /* Шаблон */
+@import "./template/bg.wrapper"; // Фон
+@import "./template/header"; // Шапка
+@import "./template/menu"; // Меню
 @import "./template/main"; // Рабочая область
 @import "./template/footer"; // Подвал
 
-/* Страницы */
+/* Главная страница */
 @import "./page/index/block"; // Основной блок
 @import "./page/index/slider"; // Слайдер
 @import "./page/index/menu"; // Меню
 @import "./page/index/desc"; // Описание
+
+/* О компании */
+@import "./page/about/text"; // Текст

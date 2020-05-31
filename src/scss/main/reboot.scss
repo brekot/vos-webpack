@@ -14,13 +14,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
 	margin: 0;
-	font: 18px/24px 'Yu Gothic UI', sans-serif;
+	font: 300 18px/24px 'Yu Gothic UI', sans-serif;
 	color: var(--grey4);
 	text-align: left;
-	background: var(--grey4) url(img/bg.main.jpg) no-repeat center / cover;
+	background-color: var(--grey2);
     height: 100%;
-    display: flex;
-    flex-direction: column;
     overflow-x: hidden;
 }
 
@@ -30,8 +28,40 @@ hr {
 	overflow: visible;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	margin: 0 0 0.5rem;
+h2, h3, h4, h5, h6,
+.h2, .h3, .h4, .h5, .h6 {
+	margin: 0 0 1rem;
+}
+
+.h1, h1 {
+    padding: 0 30px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 54px;
+    color: var(--grey5);
+    max-width: 1310px;
+    border-bottom: 2px solid var(--grey5);
+    margin: auto;
+}
+
+.h2, h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--green);
+}
+
+@include media-breakpoint-down(lg)
+{
+    .h1, h1 {
+        font-size: 22px;
+        line-height: 1;
+        padding: 10px 0;
+    }
+    .h2, h2 {
+        font-size: 20px;
+        line-height: 1;
+    }
 }
 
 p {
@@ -88,9 +118,8 @@ a:hover {
 	text-decoration: underline;
 }
 
-img {
+img:not(.no-width) {
 	max-width: 100%;
-	height: auto;
 }
 
 svg {

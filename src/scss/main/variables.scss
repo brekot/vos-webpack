@@ -14,13 +14,17 @@ $grid-breakpoints: (
     xs: 0,
     sm: 576px,
     md: 768px,
-    lg: 1024px,
+    lg: 992px,
+    xl: 1360px,
+    xxl: 1620px
 );
 
 $container-max-widths: (
     sm: 540px,
     md: 720px,
-    lg: 1008px,
+    lg: 960px,
+    xl: 1330px,
+    xxl: 1600px
 );
 
-$gutter: 24px;
+$gutter: 30px;

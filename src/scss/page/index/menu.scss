@@ -7,11 +7,12 @@
         height: 40px;
         align-items: center;
         justify-content: space-between;
+        position: relative;
+        z-index: 2;
     }
     &__link {
         color: var(--white);
         font-weight: normal;
-        font-size: 20px;
         text-transform: uppercase;
 
         &:hover {
@@ -22,5 +23,68 @@
         height: 24px;
         width: 2px;
         background-color: var(--white);
+    }
+}
+
+@include media-breakpoint-only(xxl)
+{
+    .menu-index {
+
+        &__link {
+            font-size: 20px;
+        }
+    }
+}
+@include media-breakpoint-only(lg)
+{
+    .menu-index {
+
+        &__link {
+            font-size: 13px;
+        }
+        &__sep {
+            height: 20px;
+            width: 1px;
+        }
+    }
+}
+@include media-breakpoint-between(sm, md)
+{
+    .menu-index {
+
+        &__block {
+            height: auto;
+            flex-wrap: wrap;
+            padding: 10px 0;
+        }
+        &__sep {
+            display: none;
+        }
+    }
+}
+@include media-breakpoint-only(sm)
+{
+    .menu-index {
+
+        &__link {
+            font-size: 14px;
+        }
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .menu-index {
+
+        &__block {
+            height: auto;
+            flex-direction: column;
+            padding: 10px 0;
+        }
+        &__link {
+            line-height: 35px;
+        }
+        &__sep {
+            display: none;
+        }
     }
 }

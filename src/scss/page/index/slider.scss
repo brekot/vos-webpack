@@ -1,6 +1,6 @@
 .slider-main {
     height: 550px;
-    width: 1020px;
+    width: 1000px;
     position: relative;
 
     &__pagination {
@@ -23,6 +23,39 @@
         &:hover,
         &_active {
             border-color: var(--green);
+        }
+    }
+}
+
+@include media-breakpoint-between(lg, xl)
+{
+    .slider-main {
+        height: 450px;
+
+        &__img {
+            height: 450px;
+        }
+    }
+}
+@include media-breakpoint-between(sm, md)
+{
+    .slider-main {
+        height: auto;
+        width: 100%;
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .slider-main {
+        height: auto;
+        width: calc(100% + 30px);
+        margin: 0 -15px;
+
+        &__img {
+            display: block;
+        }
+        &__pagination {
+            bottom: 15px;
         }
     }
 }

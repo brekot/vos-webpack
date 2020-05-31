@@ -1,0 +1,132 @@
+@include media-breakpoint-up(xl)
+{
+    .menu-top {
+        height: 60px;
+        display: flex;
+        width: calc(100% - 55px);
+
+        &__close {
+            display: none;
+        }
+        &__link {
+            font-weight: 400;
+            font-size: 20px;
+            color: var(--white);
+            flex: 1 1 auto;
+            text-align: center;
+            border-top: 15px solid transparent;
+            line-height: 45px;
+
+            &:hover,
+            &_active {
+                text-decoration: none;
+                color: var(--white);
+                border-color: var(--green);
+            }
+        }
+        &__sep {
+            margin: 27px 0 0;
+            height: 24px;
+            width: 2px;
+            background-color: var(--white);
+        }
+    }
+    .menu-top-btn {
+        display: none;
+    }
+}
+@include media-breakpoint-only(xl)
+{
+    .menu-top {
+
+        &__link {
+            font-size: 16px;
+        }
+    }
+}
+@include media-breakpoint-down(lg)
+{
+    .menu-top {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        width: 100%;
+        bottom: 0;
+        height: auto;
+        background-color: var(--grey1);
+        z-index: 10;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 35px;
+        transition: all .5s;
+
+        &_active {
+            right: 0;
+        }
+        &__close {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 30px;
+            height: 30px;
+
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                height: 3px;
+                width: 30px;
+                background-color: var(--grey4);
+                top: 50%;
+            }
+            &:before {
+                transform: rotate(45deg);
+            }
+            &:after {
+                transform: rotate(-45deg);
+            }
+        }
+        &__link {
+            color: var(--grey4);
+
+            &_active {
+                color: var(--green);
+            }
+        }
+        &__sep {
+            display: none;
+        }
+    }
+    .menu-top-btn {
+        display: flex;
+        padding: 10px 0;
+
+        &__icon {
+            height: 3px;
+            width: 30px;
+            background-color: var(--grey4);
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: '';
+                height: 3px;
+                width: 100%;
+                background-color: var(--grey4);
+                top: -8px;
+                left: 0;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                height: 3px;
+                width: 100%;
+                background-color: var(--grey4);
+                bottom: -8px;
+                left: 0;
+            }
+        }
+    }
+}
