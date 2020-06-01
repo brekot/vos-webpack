@@ -1,0 +1,38 @@
+.vacancy-head {
+    margin: 0 0 0 auto;
+    width: 770px;
+    padding: 0 70px 0 0;
+
+    &__name {
+        height: 36px;
+        border: 2px solid var(--green);
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        color: var(--grey4);
+        font-weight: 600;
+        font-size: 20px;
+    }
+    &__info {
+        display: flex;
+        margin: 0 0 25px;
+
+        &-part {
+            width: 20%;
+            padding: 0 10px;
+            font-size: 16px;
+            line-height: 18px;
+            border-right: 2px solid var(--green);
+
+            &:last-child {
+                border: none;
+            }
+        }
+        &-label {
+            padding: 2px 0;
+        }
+        &-value {
+            font-weight: normal;
+        }
+    }
+}

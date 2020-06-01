@@ -1,0 +1,99 @@
+<% var data = {
+    title: "Вакансия"
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="main-main">
+    <div class="container">
+        <h1 class="h1_green">ВАКАНСИИ</h1>
+
+        <div class="logo-page">
+            <div class="logo-page__left">
+                <img class="logo-page__logo logo-page__logo_big" src="./local/img/logo.svg" alt="">
+                <a href="javascript:;" class="btn-three btn-back">НАЗАД</a>
+            </div>
+            <div class="logo-page__right">
+
+                <div class="vacancy-head">
+                    <div class="vacancy-head__name">
+                        ГРУЗЧИК (Симферопольское ш.)
+                    </div>
+                    <div class="vacancy-head__info">
+                        <div class="vacancy-head__info-part">
+                            <div class="vacancy-head__info-label">направление</div>
+                            <div class="vacancy-head__info-value">Логистика</div>
+                        </div>
+                        <div class="vacancy-head__info-part">
+                            <div class="vacancy-head__info-label">зарплата</div>
+                            <div class="vacancy-head__info-value">55 000 Р</div>
+                        </div>
+                        <div class="vacancy-head__info-part">
+                            <div class="vacancy-head__info-label">место работы</div>
+                            <div class="vacancy-head__info-value">Тургеневский переулок</div>
+                        </div>
+                        <div class="vacancy-head__info-part">
+                            <div class="vacancy-head__info-label">график работы</div>
+                            <div class="vacancy-head__info-value">3/3</div>
+                        </div>
+                        <div class="vacancy-head__info-part">
+                            <div class="vacancy-head__info-label">соц.пакет</div>
+                            <div class="vacancy-head__info-value">ДМС</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vacancy-text scroll-pane">
+                    <div class="vacancy-text__block scroll-pane__block">
+                        <div class="vacancy-text__inner">
+                            ВАШИ ОБЯЗАННОСТИ<br>
+                            Прием и выдача наличных денежных средств<br>
+                            Работа с кассовыми документами<br>
+                            Работа в 1С<br>
+                            Внимательность<br>
+                            <br>
+                            МЫ ПРЕДЛАГАЕМ<br>
+                            График работы: 3/3 (с 8.00 до 20.00 и с 20.00 до 8.00)<br>
+                            Оформление согласно ТК РФ, соц.пакет<br>
+                            Стабильная заработная плата (2 раза в месяц) оклад + премия<br>
+                            ДМС (со стоматологией после года работы)<br>
+                            Дружный коллектив‚ возможности карьерного роста‚ корпоративные мероприятия для сотрудников компании<br>
+                            <br>
+                            МЕСТО РАБОТЫ:<br>
+                            Новорижское шоссе 26-й км<br>
+                            Корпоративный транспорт до места работы от м.Строгино, м.Митино и жд.Павшино<br>
+                            <br>
+                            ВАШИ ОБЯЗАННОСТИ<br>
+                            Прием и выдача наличных денежных средств<br>
+                            Работа с кассовыми документами<br>
+                            Работа в 1С<br>
+                            Внимательность<br>
+                            <br>
+                            МЫ ПРЕДЛАГАЕМ<br>
+                            График работы: 3/3 (с 8.00 до 20.00 и с 20.00 до 8.00)<br>
+                            Оформление согласно ТК РФ, соц.пакет<br>
+                            Стабильная заработная плата (2 раза в месяц) оклад + премия<br>
+                            ДМС (со стоматологией после года работы)<br>
+                            Дружный коллектив‚ возможности карьерного роста‚ корпоративные мероприятия для сотрудников компании<br>
+                            <br>
+                            МЕСТО РАБОТЫ:<br>
+                            Новорижское шоссе 26-й км<br>
+                            Корпоративный транспорт до места работы от м.Строгино, м.Митино и жд.Павшино
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="scroll-pane__down"></a>
+                </div>
+
+                <div class="vacancy-foot">
+                    <a href="javascript:;" class="btn-two">ЗАПОЛНИТЬ РЕЗЮМЕ</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

@@ -32,3 +32,8 @@
 
 /* Вакансии (список) */
 @import "./page/vacancies/list"; // Список
+
+/* Вакансия (детально) */
+@import "./page/vacancy/head"; // Шапка
+@import "./page/vacancy/text"; // Текст
+@import "./page/vacancy/foot"; // Подвал
