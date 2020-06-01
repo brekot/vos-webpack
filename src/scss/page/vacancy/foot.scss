@@ -2,3 +2,11 @@
     margin: 0 0 0 auto;
     width: 770px;
 }
+
+@include media-breakpoint-down(lg)
+{
+    .vacancy-foot {
+        margin: 0 0 50px;
+        width: 100%;
+    }
+}
