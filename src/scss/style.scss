@@ -5,6 +5,7 @@
 @import "./main/reboot"; // Сброс стилей
 
 // Общие элементы
+@import "./elem/btn"; // Кнопки
 @import "./elem/swiper"; // Общие стили сайдера
 @import "./elem/logo.page"; // Страница с логотипом
 @import "./elem/jquery.jscrollpane"; // Прокрутка
@@ -25,3 +26,6 @@
 
 /* О компании */
 @import "./page/about/text"; // Текст
+
+/* Сотрудники */
+@import "./page/employees/list"; // Список
