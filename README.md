@@ -2,4 +2,5 @@
 <a href="https://brekot.github.io/vos-webpack/dist/about.html">https://brekot.github.io/vos-webpack/dist/about.html</a><br>
 <a href="https://brekot.github.io/vos-webpack/dist/employees.html">https://brekot.github.io/vos-webpack/dist/employees.html</a><br>
 <a href="https://brekot.github.io/vos-webpack/dist/vacancies.html">https://brekot.github.io/vos-webpack/dist/vacancies.html</a><br>
-<a href="https://brekot.github.io/vos-webpack/dist/vacancy.html">https://brekot.github.io/vos-webpack/dist/vacancy.html</a>
+<a href="https://brekot.github.io/vos-webpack/dist/vacancy.html">https://brekot.github.io/vos-webpack/dist/vacancy.html</a><br>
+<a href="https://brekot.github.io/vos-webpack/dist/news.html">https://brekot.github.io/vos-webpack/dist/news.html</a>

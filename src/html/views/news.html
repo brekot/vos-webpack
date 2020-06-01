@@ -1,0 +1,195 @@
+<% var data = {
+    title: "Новости"
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="main-main">
+    <div class="container">
+        <h1>Новости</h1>
+
+        <div class="logo-page">
+            <div class="logo-page__left">
+                <img class="logo-page__logo" src="./local/img/logo.svg" alt="">
+            </div>
+            <div class="logo-page__right">
+
+                <div class="scroll-pane">
+                    <div class="news-list scroll-pane__block">
+
+                        <div class="news-list__items">
+                            <div class="news-list__item">
+                                <div class="news-list__date">05.10.2020</div>
+                                <a class="news-list__name" href="javascript:;">ДЕМОНТАЖ</a>
+                                <div class="news-list__text">
+                                    Описание проводимых работ, что было сдел, какие компании участвовали, сроки, дыты и вся неоюходимая информация. Описание проводимых работ, что было сдел, какие компании участвовали, сроки, дыты и вся неоюходимая информация.
+                                </div>
+                                <div class="news-list__panel">
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-video">
+                                            <use xlink:href="./local/img/sprite.svg#icon-video"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-camera">
+                                            <use xlink:href="./local/img/sprite.svg#icon-camera"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-location">
+                                            <use xlink:href="./local/img/sprite.svg#icon-location"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__plus"></a>
+                                </div>
+                            </div>
+                            <div class="news-list__item">
+                                <div class="news-list__date">10.10.2020</div>
+                                <a class="news-list__name" href="javascript:;">РЕКОНСТРУКЦИЯ УЛИЦЫ</a>
+                                <div class="news-list__text">
+                                    Описание проводимых работ, что было сдел, какие компании участвовали, сроки, дыты и вся неоюходимая информация. Описание проводимых работ, что было сдел, какие компании участвовали, сроки, дыты и вся неоюходимая информация.
+                                </div>
+                                <div class="news-list__panel">
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-camera">
+                                            <use xlink:href="./local/img/sprite.svg#icon-camera"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-location">
+                                            <use xlink:href="./local/img/sprite.svg#icon-location"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__plus"></a>
+                                </div>
+                            </div>
+                            <div class="news-list__item">
+                                <div class="news-list__date">05.05.2020</div>
+                                <a class="news-list__name" href="javascript:;">ОЗЕЛЕНЕНИЕ ПАРКА В ГОРОДЕ КОЛОМНА</a>
+                                <div class="news-list__text">
+                                    Описание проводимых работ, что было сдел, какие компании участвовали, сроки, дыты и вся неоюходимая информация. Описание проводимых работ, что было сдел, какие компании участвовали, сроки, дыты и вся неоюходимая информация.
+                                </div>
+                                <div class="news-list__panel">
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-video">
+                                            <use xlink:href="./local/img/sprite.svg#icon-video"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-camera">
+                                            <use xlink:href="./local/img/sprite.svg#icon-camera"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-location">
+                                            <use xlink:href="./local/img/sprite.svg#icon-location"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__plus"></a>
+                                </div>
+                            </div>
+                            <div class="news-list__item">
+                                <div class="news-list__date">10.10.2020</div>
+                                <a class="news-list__name" href="javascript:;">РЕКОНСТРУКЦИЯ УЛИЦЫ</a>
+                                <div class="news-list__text">
+                                    Описание проводимых работ, что было сдел, какие компании участвовали, сроки, дыты и вся неоюходимая информация. Описание проводимых работ, что было сдел, какие компании участвовали, сроки, дыты и вся неоюходимая информация.
+                                </div>
+                                <div class="news-list__panel">
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-camera">
+                                            <use xlink:href="./local/img/sprite.svg#icon-camera"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-location">
+                                            <use xlink:href="./local/img/sprite.svg#icon-location"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__down"></a>
+                                </div>
+                            </div>
+                            <div class="news-list__item">
+                                <div class="news-list__date">10.10.2020</div>
+                                <a class="news-list__name" href="javascript:;">ОТКРЫТИЕ УЛИЦЫ</a>
+                                <div class="news-list__text">
+                                    Описание проводимых работ, что было сдел, какие компании участвовали, сроки, дыты и вся неоюходимая информация. Описание проводимых работ, что было сдел, какие компании участвовали, сроки, дыты и вся неоюходимая информация.
+                                </div>
+                                <div class="news-list__panel">
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-camera">
+                                            <use xlink:href="./local/img/sprite.svg#icon-camera"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-location">
+                                            <use xlink:href="./local/img/sprite.svg#icon-location"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__down"></a>
+                                </div>
+                            </div>
+                            <div class="news-list__item">
+                                <div class="news-list__date">05.05.2020</div>
+                                <a class="news-list__name" href="javascript:;">ОЗЕЛЕНЕНИЕ ПО УЛИЦЕ ВАВИЛОВА, 6</a>
+                                <div class="news-list__text">
+                                    Описание проводимых работ, что было сдел, какие компании участвовали, сроки, дыты и вся неоюходимая информация. Описание проводимых работ, что было сдел, какие компании участвовали, сроки, дыты и вся неоюходимая информация.
+                                </div>
+                                <div class="news-list__panel">
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-video">
+                                            <use xlink:href="./local/img/sprite.svg#icon-video"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-camera">
+                                            <use xlink:href="./local/img/sprite.svg#icon-camera"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-location">
+                                            <use xlink:href="./local/img/sprite.svg#icon-location"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__plus"></a>
+                                </div>
+                            </div>
+                            <div class="news-list__item">
+                                <div class="news-list__date">05.10.2020</div>
+                                <a class="news-list__name" href="javascript:;">ДЕМОНТАЖ</a>
+                                <div class="news-list__text">
+                                    Описание проводимых работ, что было сдел, какие компании участвовали, сроки, дыты и вся неоюходимая информация. Описание проводимых работ, что было сдел, какие компании участвовали, сроки, дыты и вся неоюходимая информация.
+                                </div>
+                                <div class="news-list__panel">
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-video">
+                                            <use xlink:href="./local/img/sprite.svg#icon-video"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-camera">
+                                            <use xlink:href="./local/img/sprite.svg#icon-camera"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__link">
+                                        <svg class="news-list__icon news-list__icon-location">
+                                            <use xlink:href="./local/img/sprite.svg#icon-location"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:;" class="news-list__plus"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="javascript:;" class="scroll-pane__down"></a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
