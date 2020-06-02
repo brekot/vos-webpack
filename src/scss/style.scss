@@ -10,6 +10,7 @@
 @import "./elem/swiper"; // Общие стили сайдера
 @import "./elem/logo.page"; // Страница с логотипом
 @import "./elem/jquery.jscrollpane"; // Прокрутка
+@import "./elem/jquery.fancybox"; // Окна
 @import "./elem/menu.inner"; // Внутреннее меню
 
 /* Шаблон */
@@ -44,6 +45,12 @@
 
 /* Новости (список) */
 @import "./page/news/list"; // Список
+
+/* Новость (детально) */
+@import "./page/news.detail/page"; // Страница в целом
+@import "./page/news.detail/video"; // Текст
+@import "./page/news.detail/text"; // Текст
+@import "./page/news.detail/gallery"; // Фото
 
 /* Страница форм */
 @import "./page/form/page"; // Страница

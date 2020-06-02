@@ -1,0 +1,25 @@
+.news-detail-text {
+    width: 770px;
+    margin: 0 0 60px auto;
+
+    &__block {
+        height: 320px;
+    }
+    &__inner {
+        padding: 0 60px 0 0;
+    }
+}
+
+@include media-breakpoint-down(lg)
+{
+    .news-detail-text {
+        width: 100%;
+
+        &__block {
+            height: auto;
+        }
+        &__inner {
+            padding: 0;
+        }
+    }
+}

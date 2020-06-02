@@ -4,6 +4,8 @@ import Swiper from './swiper.js';
 window.jQuery = $;
 window.$ = $;
 
+require('@fancyapps/fancybox');
+
 import a from './jquery.mousewheel.js';
 import b from './jquery.jscrollpane.min.js';
 

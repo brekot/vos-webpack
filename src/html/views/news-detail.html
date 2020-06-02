@@ -1,0 +1,73 @@
+<% var data = {
+    title: "Новость"
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="main-main">
+    <div class="container">
+        <h1 class="h1_green h1_m50">НОВОСТИ</h1>
+
+        <div class="news-detail-page">
+            <div class="news-detail-page__left">
+
+                <div class="news-detail-video">
+                    <a class="news-detail-video__link" href="https://youtu.be/G54v5itLhys" data-fancybox>
+                        <img class="news-detail-video__img" src="./local/uploads/news.video.jpg" alt="">
+                    </a>
+                    <a class="news-detail-video__map" href="javascript:;">
+                        <svg class="news-detail-video__map-icon">
+                            <use xlink:href="./local/img/sprite.svg#icon-location"></use>
+                        </svg>
+                        Адрес привязать к гугл карте
+                    </a>
+                    <div class="news-detail-video__panel">
+                        <a href="javascript:;" class="btn-three btn-back">НАЗАД</a>
+                        <a href="javascript:;" class="btn-close"></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="news-detail-page__right">
+
+                <div class="news-detail-text scroll-pane">
+                    <h2>РЕКОНСТРУКЦИЯ УЛИЦЫ</h2>
+                    <div class="news-detail-text__block scroll-pane__block">
+                        <div class="news-detail-text__inner">
+                            Описанние деятельности компании<br>
+                            t’s hard to say when in our lives each of us become aware of this thing called “astronomy”. But it is safe to say that at some point on our lives, each and every one of us has that moment when we are suddenly stunned when we come face to face with the enormity of the universe that we see in the night sky. For many of us who are city dwellers, we don’t really notice that sky up there on a routine basis. The lights of the city do a good job of disguising the amazing display that is above all of our heads all of the time.<br>
+                            <br>
+                            So it might be that once a year vacation to a camping spot or a trip to a relative’s house out in the country that we find ourselves outside when the spender of the night sky suddenly decides to put on it’s spectacular show. If you have had that kind of moment when you were literally struck breathless by the spender the night sky can show to us, you can probably remember that exact moment when you could say little else but “wow” at what you saw.<br>
+                            <br>
+                            t’s hard to say when in our lives each of us become aware of this thing called “astronomy”. But it is safe to say that at some point on our lives, each and every one of us has that moment when we are suddenly stunned when we come face to face with the enormity of the universe that we see in the night sky. For many of us who are city dwellers, we don’t really notice that sky up there on a routine basis. The lights of the city do a good job of disguising the amazing display that is above all of our heads all of the time.<br>
+                            <br>
+                            So it might be that once a year vacation to a camping spot or a trip to a relative’s house out in the country that we find ourselves outside when the spender of the night sky suddenly decides to put on it’s spectacular show. If you have had that kind of moment when you were literally struck breathless by the spender the night sky can show to us, you can probably remember that exact moment when you could say little else but “wow” at what you saw.<br>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="scroll-pane__down"></a>
+                </div>
+
+                <div class="news-detail-gallery">
+                    <a href="./local/uploads/news1.jpg" class="news-detail-gallery__link" data-fancybox="gallery">
+                        <img class="news-detail-gallery__img" src="./local/uploads/news1.jpg" alt="">
+                    </a>
+                    <a href="./local/uploads/news2.jpg" class="news-detail-gallery__link" data-fancybox="gallery">
+                        <img class="news-detail-gallery__img" src="./local/uploads/news2.jpg" alt="">
+                    </a>
+                    <a href="./local/uploads/news3.jpg" class="news-detail-gallery__link" data-fancybox="gallery">
+                        <img class="news-detail-gallery__img" src="./local/uploads/news3.jpg" alt="">
+                    </a>
+                    <a href="./local/uploads/news2.jpg" class="news-detail-gallery__link" data-fancybox="gallery">
+                        <img class="news-detail-gallery__img" src="./local/uploads/news2.jpg" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

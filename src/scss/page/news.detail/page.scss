@@ -1,0 +1,37 @@
+.news-detail-page {
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+        padding: 50px 0 0 135px;
+    }
+    &__right {
+        width: calc(100% - 645px);
+        padding: 0 75px 0 0;
+    }
+}
+
+@include media-breakpoint-only(xl)
+{
+    .news-detail-page {
+
+        &__right {
+            padding: 0;
+        }
+    }
+}
+@include media-breakpoint-down(lg)
+{
+    .news-detail-page {
+        flex-direction: column;
+
+        &__left {
+            order: 2;
+        }
+        &__right {
+            order: 1;
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
