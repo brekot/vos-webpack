@@ -6,6 +6,7 @@
 
 // Общие элементы
 @import "./elem/btn"; // Кнопки
+@import "./elem/form"; // Формы
 @import "./elem/swiper"; // Общие стили сайдера
 @import "./elem/logo.page"; // Страница с логотипом
 @import "./elem/jquery.jscrollpane"; // Прокрутка
@@ -43,3 +44,6 @@
 
 /* Новости (список) */
 @import "./page/news/list"; // Список
+
+/* Страница форм */
+@import "./page/form/page"; // Страница

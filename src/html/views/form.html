@@ -1,0 +1,101 @@
+<% var data = {
+    title: "Формы"
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="main-main">
+    <div class="container">
+        <h1 class="h1_green h1_m50">Формы</h1>
+
+        <div class="form-page">
+            <div class="inner-title">ГРУЗЧИК (Симферопольское ш.)</div>
+            <div class="form-page__block">
+                <div class="form-page__part">
+
+                    <div class="form-one">
+                        <form>
+                            <div class="form-one__block">
+                                <div class="form-one__title">СОИСКАТЕЛЬ:</div>
+                                <div class="form-one__line form-one__line_success form-one__line_required">
+                                    <input class="form-one__input" type="text" value="" placeholder="Фамилия">
+                                </div>
+                                <div class="form-one__line form-one__line_error form-one__line_required">
+                                    <input class="form-one__input" type="text" value="" placeholder="Имя">
+                                </div>
+                                <div class="form-one__line form-one__line_required">
+                                    <input class="form-one__input" type="text" value="" placeholder="Отчество">
+                                </div>
+                            </div>
+                            <div class="form-one__block">
+                                <div class="form-one__title">КОНТАКТЫ:</div>
+                                <div class="form-one__line form-one__line_required">
+                                    <input class="form-one__input" type="tel" value="" placeholder="Телефон +7 ( )">
+                                </div>
+                                <div class="form-one__line form-one__line_required">
+                                    <input class="form-one__input" type="email" value="" placeholder="E-mail">
+                                </div>
+                            </div>
+                            <div class="form-one__block form-one__block_m65">
+                                <div class="form-one__title">РЕЗЮМЕ:</div>
+                                <div class="form-one__line">
+                                    <div class="form-one__file">
+                                        <input class="form-one__file-input" type="file" value="" placeholder="Загрузить резюме">
+                                        <div class="form-one__file-name">Загрузить резюме</div>
+                                        <svg class="form-one__file-icon">
+                                            <use xlink:href="./local/img/sprite.svg#icon-file"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-one__block">
+                                <a href="javascript:;" class="btn-three btn-back">НАЗАД</a>
+                                <a href="javascript:;" class="btn-close"></a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="form-page__part">
+
+                    <div class="form-one">
+                        <form>
+                            <div class="form-one__block">
+                                <div class="form-one__title">ВАКАНСИЯ</div>
+                                <div class="form-one__line">
+                                    <input class="form-one__input" type="text" value="" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-one__block form-one__block_m65">
+                                <div class="form-one__title">КОММЕНТАРИИ:</div>
+                                <div class="form-one__line">
+                                    <textarea class="form-one__textarea" placeholder="-"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-one__block form-one__block_m65">
+                                <div class="form-one__checkbox-box">
+                                    <label class="form-one__checkbox" for="check">
+                                        <input class="form-one__checkbox-input" type="checkbox" id="check" value="" checked>
+                                        <span class="form-one__checkbox-check"></span>
+                                    </label>
+                                    <div class="form-one__checkbox-label">
+                                        Согласен на обработку персональных данных
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-one__block">
+                                <button type="submit" class="btn-two">ОТПРАВИТЬ РЕЗЮМЕ</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

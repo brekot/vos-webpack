@@ -213,3 +213,14 @@ textarea {
 	overflow: auto;
 	resize: vertical;
 }
+
+.inner-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--grey5);
+    padding: 0 15px;
+    border-bottom: 2px solid var(--green);
+    max-width: 725px;
+    margin: 0 0 20px;
+}

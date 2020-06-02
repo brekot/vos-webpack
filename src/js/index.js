@@ -41,4 +41,9 @@ $(function() {
             scrollApi.scrollByY(50);
         });
     }
+
+    $('.form-one__file-input').change(function(){
+
+        $(this).next('.form-one__file-name').text($(this).val().split('\\').pop());
+    });
 });
