@@ -1,0 +1,46 @@
+<% var data = {
+    title: "Сотрудник"
+}; %>
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="main-main">
+    <div class="container">
+        <h1 class="h1_green h1_m50">Сотрудники</h1>
+
+        <div class="employee-block">
+            <div class="employee-block__left">
+                <div class="employee-block__pict">
+                    <img class="employee-block__img" src="./local/uploads/employee.resize.jpg" alt="">
+                    <div class="employee-block__btn">
+                        <a href="javascript:;" class="btn-three btn-back">НАЗАД</a>
+                        <a href="javascript:;" class="btn-close"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="employee-block__right">
+                <div class="employee-block__name">
+                    ИВАНОВ<br>
+                    Имя Отчество
+                </div>
+                <div class="employee-block__dol">
+                    Администратор
+                </div>
+                <div class="employee-block__text">
+                    Ценность и уникальность нашей компании заключается в нашей компании заключается в Ценность и уникальность нашей компании заключается в
+                </div>
+                <a href="tel:+74950326611" class="employee-block__phone">
+                    <svg class="employee-block__phone-icon">
+                        <use xlink:href="./local/img/sprite.svg#icon-phone"></use>
+                    </svg>
+                    +7 495 032 66 11 доб. 115
+                </a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
