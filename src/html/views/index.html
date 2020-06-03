@@ -4,6 +4,11 @@
 
 <%= _.template(require('./../includes/head.html'))(data) %>
 
+<!-- header обернуть в <div class="d-xl-none"> или самому <header class="main-header"> на главной странице добавить класс d-xl-none, т.е. <header class="main-header d-xl-none"> -->
+<div class="d-xl-none">
+    <%= _.template(require('./../includes/header.html'))(data) %>
+</div>
+
 <main class="main-main">
     <div class="index-block">
         <div class="container">

@@ -5,12 +5,51 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
 
         <title>Восток - Главная</title>
-        <link href="./local/template_styles.css?fe430d9279565d590b67" rel="stylesheet" />
+        <link href="./local/template_styles.css?2b0f96856b4a07dbccce" rel="stylesheet" />
     </head>
 
     <body>
         <img class="main-bg no-width" src="./local/img/bg.main.jpg" alt="" />
         <div class="wrapper">
+            <!-- header обернуть в <div class="d-xl-none"> или самому <header class="main-header"> на главной странице добавить класс d-xl-none, т.е. <header class="main-header d-xl-none"> -->
+            <div class="d-xl-none">
+                <header class="main-header">
+                    <div class="container">
+                        <div class="main-header__block">
+                            <a class="main-header__home" href="/">
+                                <svg class="main-header__home-icon">
+                                    <use xlink:href="./local/img/sprite.svg#icon-home"></use>
+                                </svg>
+                                <img class="main-header__home-logo" src="./local/img/logo.two.svg" alt="" />
+                            </a>
+                            <nav class="menu-top">
+                                <a class="menu-top__close" href="javascript:;"></a>
+                                <a class="menu-top__link" href="javascript:;">О КОМПАНИИ</a>
+                                <span class="menu-top__sep"></span>
+                                <a class="menu-top__link menu-top__link_active" href="javascript:;">НОВОСТИ</a>
+                                <span class="menu-top__sep"></span>
+                                <a class="menu-top__link" href="javascript:;">ВИДЫ ДЕЯТЕЛЬНОСТИ</a>
+                                <span class="menu-top__sep"></span>
+                                <a class="menu-top__link" href="javascript:;">ПРОЕКТЫ</a>
+                                <span class="menu-top__sep"></span>
+                                <a class="menu-top__link" href="javascript:;">ФОТО И ВИДЕО</a>
+                                <span class="menu-top__sep"></span>
+                                <a class="menu-top__link" href="javascript:;">НАШ КОНСОРЦИУМ</a>
+                                <span class="menu-top__sep"></span>
+                                <a class="menu-top__link" href="javascript:;">СТАТЬ ПАРТНЕРОМ</a>
+                                <span class="menu-top__sep"></span>
+                                <a class="menu-top__link" href="javascript:;">ВАКАНСИИ</a>
+                                <span class="menu-top__sep"></span>
+                                <a class="menu-top__link" href="javascript:;">КОНТАКТЫ</a>
+                            </nav>
+                            <a href="javascript:;" class="menu-top-btn">
+                                <span class="menu-top-btn__icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
             <main class="main-main">
                 <div class="index-block">
                     <div class="container">
@@ -120,6 +159,6 @@
                 </div>
             </footer>
         </div>
-        <script type="text/javascript" src="./local/js/script.js?fe430d9279565d590b67"></script>
+        <script type="text/javascript" src="./local/js/script.js?2b0f96856b4a07dbccce"></script>
     </body>
 </html>
