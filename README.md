@@ -1,9 +1,13 @@
-<a href="https://brekot.github.io/vos-webpack/dist/index.html">https://brekot.github.io/vos-webpack/dist/index.html</a><br>
-<a href="https://brekot.github.io/vos-webpack/dist/about.html">https://brekot.github.io/vos-webpack/dist/about.html</a><br>
-<a href="https://brekot.github.io/vos-webpack/dist/employees.html">https://brekot.github.io/vos-webpack/dist/employees.html</a><br>
-<a href="https://brekot.github.io/vos-webpack/dist/employee.html">https://brekot.github.io/vos-webpack/dist/employee.html</a><br>
-<a href="https://brekot.github.io/vos-webpack/dist/vacancies.html">https://brekot.github.io/vos-webpack/dist/vacancies.html</a><br>
-<a href="https://brekot.github.io/vos-webpack/dist/vacancy.html">https://brekot.github.io/vos-webpack/dist/vacancy.html</a><br>
-<a href="https://brekot.github.io/vos-webpack/dist/news.html">https://brekot.github.io/vos-webpack/dist/news.html</a><br>
-<a href="https://brekot.github.io/vos-webpack/dist/news-detail.html">https://brekot.github.io/vos-webpack/dist/news-detail.html</a><br>
-<a href="https://brekot.github.io/vos-webpack/dist/form.html">https://brekot.github.io/vos-webpack/dist/form.html</a>
+https://brekot.github.io/vos-webpack/index.html<br>
+https://brekot.github.io/vos-webpack/about.html<br>
+https://brekot.github.io/vos-webpack/employees.html<br>
+https://brekot.github.io/vos-webpack/employee.html<br>
+https://brekot.github.io/vos-webpack/vacancies.html<br>
+https://brekot.github.io/vos-webpack/vacancy.html<br>
+https://brekot.github.io/vos-webpack/news.html<br>
+https://brekot.github.io/vos-webpack/news-detail.html<br>
+https://brekot.github.io/vos-webpack/form.html<br>
+
+<hr>
+
+Папка /docs - для разработчика. Содержит готовые файлы верски. Остальные файлы и папки служебные.
