@@ -49,3 +49,8 @@ $(function() {
         $(this).next('.form-one__file-name').text($(this).val().split('\\').pop());
     });
 });
+
+$(window).on('load', function() {
+
+    $('body').addClass('page-load');
+});
