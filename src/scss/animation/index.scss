@@ -6,12 +6,15 @@ h1 {
 }
 
 .index-block__right,
-.logo-page__left {
+.logo-page__left,
+.form-page {
     opacity: 0;
     transition: 1s linear .5s;
 }
 
-.menu-index {
+.menu-index,
+.employee-block__left,
+.news-detail-page__left {
     transform: translate(-100%, 0);
     transition: .5s linear 1.5s;
     opacity: 0;
@@ -28,7 +31,9 @@ h1 {
     opacity: 0;
 }
 
-.logo-page__right {
+.logo-page__right,
+.employee-block__right,
+.news-detail-page__right {
     transform: translate(100%, 0);
     transition: .5s linear 1.5s;
     opacity: 0;
@@ -36,20 +41,23 @@ h1 {
 
 .page-load {
 
+    h1,
     .index-block__left,
     .main-header,
-    h1 {
-        opacity: 1;
-    }
     .index-block__right,
-    .logo-page__left {
+    .logo-page__left,
+    .form-page {
         opacity: 1;
     }
 
     .menu-index,
     .index-desc,
     .main-footer,
-    .logo-page__right {
+    .logo-page__right,
+    .employee-block__right,
+    .employee-block__left,
+    .news-detail-page__left,
+    .news-detail-page__right {
         transform: translate(0, 0);
         opacity: 1;
     }
